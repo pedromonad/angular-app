@@ -1,0 +1,17 @@
+{
+  "name": "angular-app",
+  "version": "1.0.0",
+  "description": "Angular app to consume rest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8080 ."
+  },
+  "author": "Pedro Barros",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.5.2",
+    "http-server": "^0.9.0",
+    "materialize-css": "^0.97.5"
+  }
+}

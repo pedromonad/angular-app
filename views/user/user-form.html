@@ -1,0 +1,11 @@
+<p>{{ userForm.error_msg }}</p>
+
+<form name="form_user" ng-submit="userForm.submit()">
+	<input type="text" name="text" required ng-model="userForm.formModel.first_name" placeholder="Type your first name" />
+
+	<input type="text" name="text" required ng-model="userForm.formModel.last_name" placeholder="Type your last name" />
+	
+	<input type="text" name="status" value="active" ng-model="userForm.formModel.status" placeholder="Type your active or rejected" />
+
+   <input type="submit" id="submit" value="Submit" class="btn " />
+</form>

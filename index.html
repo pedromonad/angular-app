@@ -1,0 +1,28 @@
+<html ng-app="angularApp">
+<head>
+	
+	<title>Angular App to consume Rails API</title>
+
+	<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" />
+	<link rel="stylesheet" href="views/user/style.css" />
+	<script type="text/javascript" src="node_modules/angular/angular.js" ></script>
+
+
+</head>
+
+	<main class="container">
+		<h1>Users</h1>
+
+		<user-list></user-list>
+
+	</main>
+	
+	
+	<script type="text/javascript" src="src/app.js"></script>
+	<script type="text/javascript" src="src/user/user-list.ctrl.js"></script>
+	<script type="text/javascript" src="src/user/user-list.directive.js"></script>
+
+	<script type="text/javascript" src="src/user/user-form.ctrl.js"></script>
+	<script type="text/javascript" src="src/user/user-form.directive.js"></script>
+
+</html>
