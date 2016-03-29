@@ -1,0 +1,67 @@
+td, th{
+	width:10% !important;
+	overflow:hidden;
+	text-align: center;
+}
+
+.activeLink{
+	text-decoration: underline !important;
+}
+
+.clear{
+	clear:both
+}
+
+.nav-wrapper{
+	background-color:#ee6e73 !important;
+}
+
+.msg-error{
+	width:100%;
+	border:1px solid #EE6E73;
+	background:#F9D4D4;
+	padding:1em;
+	color:#EE6E73;
+	margin-bottom:1em;
+}
+
+.msg-success{
+	width: 100%;
+    border: 1px solid #26A69A;
+    background: rgba(38, 166, 154, 0.28);
+    padding: 1em;
+    color: #26A69A;
+    margin-bottom: 1em;
+}
+
+.container-left{
+	width:47%;
+	float:left;
+}
+
+.container-right{
+	width:47%;
+	float:right;
+	text-align: right;
+}
+
+.container-right a{
+	width:30px;
+	height:30px;
+	float:right;
+}
+
+.clear-both hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top:1px solid #D0D0D0;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: inherit !important;
+    left: 0px !important;
+    visibility: visible !important;
+}

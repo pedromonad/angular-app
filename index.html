@@ -1,28 +1,31 @@
 <html ng-app="angularApp">
 <head>
-	
-	<title>Angular App to consume Rails API</title>
-
+	<title>Angular App</title>
 	<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" />
-	<link rel="stylesheet" href="views/user/style.css" />
-	<script type="text/javascript" src="node_modules/angular/angular.js" ></script>
-
-
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/style.css" />
 </head>
+<body>
+
+	<ng-include src="'views/partials/header.html'"></ng-include>
 
 	<main class="container">
-		<h1>Users</h1>
 
-		<user-list></user-list>
+		<div ui-view></div>
 
 	</main>
-	
-	
+
+	<script type="text/javascript" src="node_modules/angular/angular.js" ></script>
+  	<script src="node_modules/ui-router/release/angular-ui-router.js"></script>
+  	<script type="text/javascript" src="node_modules/checklist-model/checklist-model.js" ></script>
+	<script type="text/javascript" src="node_modules/angular-utils-pagination/dirPagination.js" ></script>
 	<script type="text/javascript" src="src/app.js"></script>
-	<script type="text/javascript" src="src/user/user-list.ctrl.js"></script>
-	<script type="text/javascript" src="src/user/user-list.directive.js"></script>
-
-	<script type="text/javascript" src="src/user/user-form.ctrl.js"></script>
-	<script type="text/javascript" src="src/user/user-form.directive.js"></script>
-
+	<script type="text/javascript" src="src/configs/config.const.js"></script>
+	<script type="text/javascript" src="src/components/user/user.route.js"></script>
+	<script type="text/javascript" src="src/components/user/user.service.js"></script>
+	<script type="text/javascript" src="src/components/user/user-list.ctrl.js"></script>
+	<script type="text/javascript" src="src/components/user/user-list.directive.js"></script>
+	<script type="text/javascript" src="src/components/user/user-form.ctrl.js"></script>
+	<script type="text/javascript" src="src/components/user/user-form.directive.js"></script>
+</body>
 </html>

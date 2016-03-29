@@ -1,7 +1,7 @@
 'use strict';
 
 (function(){
-	angular.module('angularApp')
+	angular.module(APP_NAME)
 		.directive('userForm', userForm);
 
 	function userForm(){

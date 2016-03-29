@@ -1,4 +1,5 @@
-<user-form></user-form>
+
+<input type="text" ng-model="userList.querySearch" name="querySearch" placeholder="Type your search..." />
 
 <table>
 	<thead>
@@ -7,18 +8,28 @@
 		<th>Status</th>
 		<th>Created at</th>
 		<th>Updated at</th>
+		<th><button class="btn" ui-sref="add" alt="Add a new"><i class="material-icons">add</i></button></th>
 	</thead>
 
 	<tbody>
 
-		<tr ng-repeat="item in userList.list">
+		<tr dir-paginate="item in userList.list | itemsPerPage: 10 | filter: userList.querySearch ">
 			<td>{{ item.id }}</td>
 			<td>{{ item.first_name }}</td>
-			<td>{{ item.status }}</td>
+			<td><input type="checkbox" checklist-model="item.status" checklist-value="item.status" ng-click="userList.statusChanged(item.id, item.status)" 
+			ng-checked="{{ item.status == 'active'}}" /> </td>
 			<td>{{ item.created_at }}</td>
 			<td>{{ item.updated_at }}</td>
+			<td><button class="btn" ui-sref="edit({ id: item.id })"><i class="material-icons">edit</i></button></td>
 		</tr>	
+
+
 	</tbody>
+	
 </table>
+
+<div class="clear-both"><hr /></div>
+
+<dir-pagination-controls></dir-pagination-controls>
 
 

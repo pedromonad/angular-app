@@ -1,17 +1,19 @@
 {
   "name": "angular-app",
   "version": "1.0.0",
-  "description": "Angular app to consume rest api",
+  "description": "Angular app to consume api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -p 8080 ."
+    "start": "webpack-dev-server"
   },
   "author": "Pedro Barros",
   "license": "MIT",
   "devDependencies": {
     "angular": "^1.5.2",
-    "http-server": "^0.9.0",
-    "materialize-css": "^0.97.5"
+    "angular-utils-pagination": "^0.11.0",
+    "checklist-model": "^0.9.0",
+    "materialize-css": "^0.97.5",
+    "ui-router": "^1.0.0-alpha0",
+    "webpack": "^1.12.14"
   }
 }
