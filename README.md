@@ -1,4 +1,4 @@
-# angular-app
+# Angular App
 
 Angular application to consume API.
 
