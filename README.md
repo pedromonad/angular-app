@@ -2,7 +2,6 @@
 
 Angular application to consume API.
 
-
 Installing 
 -------
 ```
